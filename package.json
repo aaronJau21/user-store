@@ -1,0 +1,39 @@
+{
+  "name": "use-store",
+  "version": "1.0.0",
+  "description": "Use Clean Arquiteccture",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronJau21/user-store.git"
+  },
+  "keywords": [
+    "ts",
+    "express",
+    "Mongo",
+    "DB"
+  ],
+  "author": "Aaron Jauregui Sifuentes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronJau21/user-store/issues"
+  },
+  "homepage": "https://github.com/aaronJau21/user-store#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.11",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "env-var": "^7.5.0",
+    "express": "^4.19.2"
+  }
+}
