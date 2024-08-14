@@ -4,7 +4,8 @@ const CategorySchema = new Schema(
   {
     name: {
       type: String,
-      requireed: [ true, 'Name is required' ]
+      requireed: [ true, 'Name is required' ],
+      uniqued: true
     },
     available: {
       type: Boolean,
